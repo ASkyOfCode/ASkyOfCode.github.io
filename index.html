@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<title>A SKY OF CODE</title>
+        <style>
+        #BackGroundImg{
+                position:absolute;
+		width:100%;
+	        height:100%;
+		background-size:cover;
+                opacity:0.5;
+		z-index:-1;
+	}
+        #ImageDiv{
+               position:relative;
+               border:0px solid #7D9EC0;
+               width:100%;
+               height:100%;
+               margin:0px auto;
+               text-align:center;
+        }
+        #LeftDiv,#RightDiv{
+                position:relative;
+                border:15px solid #7D9EC0;
+                width:100%;
+                height:100%;                    
+        }
+        #LeftDiv{
+               margin-left:2%;
+               float:left;
+               text-align:left;
+        }
+        #RightDiv{
+               margin-right:2%;
+               float:right;
+               text-align:left;
+       }
+	#ImageImg{
+                position:relative;
+		width:60%;
+	        height:30%;
+	}
+	</style>
+      
+	</head>
+  	<body>
+         <script type="text/javascript">
+	    function fontficker(){
+	      var colorstring = "yellow|green|blue|gray|red|orange";
+	      var colorStr = colorstring.split('|');
+	      document.getElementById('fondcolor').color = colorStr[parseInt(Math.random()*colorStr.length)];
+	    }
+           window.onload=function(){ 
+              setInterval("fontficker()",500);
+            };
+	</script>
+	<img id="BackGroundImg" src="Image/BackGround.JPG" alt=""/>
+       <center><em><strong><font id='fondcolor' color=red size=6px>WELCOME TO A SKY OF CODE'S WORLD</font></stromg></em></center> </br>
+
+       <table id="BigTable" width="100%">
+          <tr>
+		  <td width="40%" height="100%">
+		    <div id = "LeftDiv">     
+		       <strong><em><font size=5px color="#000000"><center>Personal Introduction</center></font></em></strong></br></br></br>
+                       <left><font size=6px color="#000066">
+		               Work:  Student</br></br></br>
+		               Sex :  Man</br></br></br>
+		               E-Mail:1292749184@qq.com</br></br></br>
+		               School:Secret
+                       </font></left>
+		    </div>
+                  </td>
+                  <td width="20%" height="60%"> 
+                    <div id="ImageDiv">
+	                  </br> <img id="ImageImg" src="Image/Unity.JPG" alt=""/></br></br>
+		    &nbsp;<img id="ImageImg" src="Image/Header.JPG" alt=""/></br></br>
+		    &nbsp;<img id="ImageImg" src="Image/Java Web.JPG" alt=""/></br></br>
+		   </div>
+		  </td>
+                  
+                  <td width="40%" height="100%">
+		    <div id = "RightDiv">
+		     <center><strong><em><font size=5px color="#000000">Professional Knowledge </font></em></strong></br></br></br></br>
+                     </br></br></br></br></br><font size=7px><a href="Https://github.com/ASkyOfCode">Click this</a></font></cneter>
+		    </div>
+                  </td>
+         </tr>
+     </table>
+
+      </body>
+</html>
